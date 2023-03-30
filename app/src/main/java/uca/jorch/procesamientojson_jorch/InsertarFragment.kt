@@ -47,11 +47,7 @@ class InsertarFragment : Fragment() {
             var resultadoPost = object : StringRequest(
                 Request.Method.POST, url,
                 Response.Listener<String> { response ->
-                    Toast.makeText(
-                        getActivity(),
-                        "Usuario ha sido insertado existosamente",
-                        Toast.LENGTH_LONG
-                    ).show()
+                    Toast.makeText(getActivity(),"Usuario ha sido insertado existosamente",Toast.LENGTH_LONG).show()
                 }, Response.ErrorListener { error ->
                     Toast.makeText(getActivity(), "Error: $error", Toast.LENGTH_LONG).show()
                 }) {
