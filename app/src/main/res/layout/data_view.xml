@@ -7,19 +7,21 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/cooricon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvidC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:text="ID"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,8 +29,8 @@
         android:id="@+id/tvnombres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Nombre"
+        android:layout_marginTop="10dp"
+        android:text="Nombres"
         app:layout_constraintStart_toStartOf="@+id/tvidC"
         app:layout_constraintTop_toBottomOf="@+id/tvidC" />
 
@@ -37,8 +39,8 @@
         android:id="@+id/tvapellidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Apellido"
+        android:layout_marginTop="10dp"
+        android:text="Apellidos"
         app:layout_constraintStart_toStartOf="@+id/tvnombres"
         app:layout_constraintTop_toBottomOf="@+id/tvnombres" />
 
@@ -46,7 +48,7 @@
         android:id="@+id/tvfechaNac"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="Fecha de nacimoento"
         app:layout_constraintStart_toStartOf="@+id/tvapellidos"
         app:layout_constraintTop_toBottomOf="@+id/tvapellidos" />
@@ -55,7 +57,7 @@
         android:id="@+id/tvtitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="Titulo"
         app:layout_constraintStart_toStartOf="@+id/tvfechaNac"
         app:layout_constraintTop_toBottomOf="@+id/tvfechaNac" />
@@ -64,7 +66,7 @@
         android:id="@+id/tvemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="Email"
         app:layout_constraintStart_toStartOf="@+id/tvtitulo"
         app:layout_constraintTop_toBottomOf="@+id/tvtitulo" />
@@ -73,7 +75,7 @@
         android:id="@+id/tvfacultad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="Facultad"
         app:layout_constraintStart_toStartOf="@+id/tvemail"
         app:layout_constraintTop_toBottomOf="@+id/tvemail" />
@@ -81,8 +83,10 @@
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="#efefef"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/personal"
         app:layout_constraintTop_toBottomOf="@+id/tvfacultad"
         app:layout_constraintLeft_toLeftOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,7 +20,7 @@ class ViewFilterFragment : Fragment() {
     private var _binding: FragmentViewFilterBinding? = null
     private val binding get() = _binding!!
     val userList = arrayListOf<UserData>()
-    val uri = "http://192.168.1.7/metodos/See60.php"
+    val uri = "http://192.168.1.6/evaluación-Jorch/MostrarFilterCoordinador.php"
     var recycleView: RecyclerView? = null
 
 

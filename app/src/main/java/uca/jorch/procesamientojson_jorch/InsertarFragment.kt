@@ -41,7 +41,7 @@ class InsertarFragment : Fragment() {
         etEmail = binding.etEmail
         etFacultad = binding.etFacultad
 
-        binding.btnGuardar.setOnClickListener() {
+        binding.btnInsertar.setOnClickListener() {
             val url = "http://192.168.1.6/evaluación-Jorch/InsertarCoordinador.php"
             val queue = Volley.newRequestQueue(activity)
             var resultadoPost = object : StringRequest(

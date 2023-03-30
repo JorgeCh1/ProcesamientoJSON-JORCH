@@ -23,17 +23,13 @@ class InicioFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnAgregar.setOnClickListener(){
+        binding.btnDatos.setOnClickListener(){
             it.findNavController().navigate(R.id.InicioToInsertar)
         }
-        binding.btnMostrar.setOnClickListener(){
+        binding.btnMostrarTodos.setOnClickListener(){
             it.findNavController().navigate(R.id.InicioToViewAll)
         }
-
-        /*binding.btnEditar.setOnClickListener {
-            it.findNavController().navigate(R.id.homeEditar)
-        }*/
-        binding.btnMostrar60.setOnClickListener {
+        binding.btnMostrarFiltro.setOnClickListener {
             it.findNavController().navigate(R.id.InicioToViewFilter)
         }
 
