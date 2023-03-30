@@ -20,9 +20,7 @@ class UserAdapter(private val userList: ArrayList<UserData>): RecyclerView.Adapt
                 tvemail.text = item.email
                 tvfacultad.text = item.faculty
 
-
             }
-
 
         }
     }

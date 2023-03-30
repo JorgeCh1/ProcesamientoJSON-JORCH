@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="uca.jorch.procesamientojson_jorch.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/InicioToInsertar"
+            app:destination="@id/insertarFragment" />
+        <action
+            android:id="@+id/InicioToViewAll"
+            app:destination="@id/viewAllFragment" />
+        <action
+            android:id="@+id/InicioToViewFilter"
+            app:destination="@id/viewFilterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertarFragment"
+        android:name="uca.jorch.procesamientojson_jorch.InsertarFragment"
+        android:label="fragment_insertar"
+        tools:layout="@layout/fragment_insertar" />
+    <fragment
+        android:id="@+id/viewFilterFragment"
+        android:name="uca.jorch.procesamientojson_jorch.ViewFilterFragment"
+        android:label="fragment_view_filter"
+        tools:layout="@layout/fragment_view_filter" />
+    <fragment
+        android:id="@+id/viewAllFragment"
+        android:name="uca.jorch.procesamientojson_jorch.ViewAllFragment"
+        android:label="fragment_vista_all"
+        tools:layout="@layout/fragment_vista_all" />
+</navigation>
